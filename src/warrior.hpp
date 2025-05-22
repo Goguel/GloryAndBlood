@@ -5,28 +5,34 @@
 #include <string>
 #include <bits/ostream.tcc>
 
+#include "dice.hpp"
+
 class Warrior {
 
     private:
+        Dice dice;
         std::string name;
         int health;
         int maxHealth;
-        int attack;
-        int defense;
-        int healing;
+        float attack;
+        float defense;
+        float healing;
+        int attackChance;
+        int defenseChance;
+        int healingChance;
 
     public:
         Warrior(const std::string& name, int health, int maxHealth);
 
         void display() const;
 
-        void setStatus(int attack, int defense, int healing);
+        void setChances(int atkChance, int defChance, int healChance);
 
-        int getAttack();
-
-        int getDefense();
-
-        int getHealing();
+        // Getters
+        std::string getName();
+        int getAttackChance();
+        int getDefenseChance();
+        int getHealingChance();
 };
 
 #endif // WARRIOR_HPP

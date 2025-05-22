@@ -16,8 +16,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic")
 set( APP_NAME "gloryAndBlood" )
 add_executable( ${APP_NAME}
         "src/main.cpp"
-        "src/victoryRoad.cpp"
-        "src/victoryRoad.hpp"
+        "src/arena.cpp"
+        "src/arena.hpp"
         "src/warrior.cpp"
         "src/warrior.hpp"
         "src/dice.cpp"

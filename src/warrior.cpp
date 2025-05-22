@@ -16,21 +16,24 @@ void Warrior::display() const {
               << "Vida maxima: " << maxHealth << std::endl;
 }
 
-void Warrior::setStatus(int attack, int defense, int healing) {
-    this->attack = attack;
-    this->defense = defense;
-    this->healing = healing;
+void Warrior::setChances(int atkChance, int defChance, int healChance) {
+    attackChance = atkChance;
+    defenseChance = defChance;
+    healingChance = healChance;
 }
 
-int Warrior::getAttack() {
+std::string Warrior::getName() {
+    return name;
+}
+int Warrior::getAttackChance() {
     return attack;
 }
 
-int Warrior::getDefense() {
+int Warrior::getDefenseChance() {
     return defense;
 }
 
-int Warrior::getHealing() {
+int Warrior::getHealingChance() {
     return healing;
 }
 
