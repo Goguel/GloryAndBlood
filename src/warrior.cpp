@@ -22,3 +22,15 @@ void Warrior::setStatus(int attack, int defense, int healing) {
     this->healing = healing;
 }
 
+int Warrior::getAttack() {
+    return attack;
+}
+
+int Warrior::getDefense() {
+    return defense;
+}
+
+int Warrior::getHealing() {
+    return healing;
+}
+

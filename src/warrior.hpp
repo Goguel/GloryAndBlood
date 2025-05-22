@@ -21,6 +21,12 @@ class Warrior {
         void display() const;
 
         void setStatus(int attack, int defense, int healing);
+
+        int getAttack();
+
+        int getDefense();
+
+        int getHealing();
 };
 
 #endif // WARRIOR_HPP

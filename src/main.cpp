@@ -14,9 +14,9 @@ int main(int argc, char* argv[]) {
     warrior1.setStatus(5, 3, 1);
     warrior2.setStatus(2, 4, 3);
 
-    VictoryRoad::combat(warrior1, warrior2);
+    arena.combat(warrior1, warrior2);
 
-    warrior1.display();
+    //warrior1.display();
 
     return 0;
 }
